@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/amirmc/unikernel-www.png?branch=master)](https://travis-ci.org/amirmc/unikernel-www)
+
 Unikernel to serve static website for amirchaudhry.com
 
 This is a test repo to get the travis workflow up and running.
