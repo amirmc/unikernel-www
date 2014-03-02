@@ -30,3 +30,7 @@ mirage --version
 # run the commands to build from here
 mirage configure --unix
 mirage build
+
+mirage clean
+mirage configure --xen
+mirage build
