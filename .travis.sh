@@ -71,7 +71,7 @@ if [ "$DEPLOY" = "1" -a "$TRAVIS_PULL_REQUEST" = "false" ]; then
             cd $DEPLOY_REPO
             rm -rf $XEN_DIR     # in case of hash collision, delete previous?
             mkdir -p $XEN_DIR
-            cp ../src/$DEPLOY_IMAGE ../src/config.ml $XEN_DIR
+            cp ../$DEPLOY_IMAGE ../config.ml $XEN_DIR
             bzip2 -9 $XEN_DIR/$DEPLOY_IMAGE
             git pull --rebase   # in case there are changes since cloning
             echo $TRAVIS_COMMIT > xen/latest    # update ref to most recent
