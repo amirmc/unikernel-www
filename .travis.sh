@@ -30,7 +30,7 @@ echo Mirage version
 mirage --version
 
 # run the commands to build from here
-mirage configure MODE=$MIRAGE_BACKEND
+mirage configure --$MIRAGE_BACKEND
 mirage build
 
 #############################
