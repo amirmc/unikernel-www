@@ -2,7 +2,8 @@ language: c
 script: bash -ex .travis.sh
 env:
   matrix:
-  - OCAML_VERSION=4.01.0 OPAM_VERSION=1.1.0
+  - OCAML_VERSION=4.01.0 OPAM_VERSION=1.1.0 MIRAGE_BACKEND=xen DEPLOY=1
+  - OCAML_VERSION=4.01.0 OPAM_VERSION=1.1.0 MIRAGE_BACKEND=unix
   global:
   - secure: W63m7iEIdWcWsiXOenApfnDJVNcuQjbrJAIY8vvqvlk6dVg7lsxe22dsK5lth4aRxZFbzTsTosyP6avCd7fB8l2UGDulx6dsYcHMvqhmgl0Y1d/jEEt6GtU8nTXCsy/xyRg17Z2riSdWwh7vdA9oZow4PaTYb//hjRmoOpYY3mE=
   - secure: Ei/jdqd5V2DxXnmT58r0mqhzwfqVppU4pseKkwZ9EqJbAAupdaf7zgcgieDT8mQRBfJGqE284GyQrxO4FXJGi/QM+oGvF4jKAqO7WZEhy2Lsh3arViYz0UdfPvXwY5iXNjxVl9nf4XzSQ3Rd6nopAsODNfXDxFmWYYBs2UYiGKE=
