@@ -21,6 +21,7 @@ opam install ${OPAM_DEPENDS}
 eval `opam config env`
 
 # Print info on system
+pwd
 echo OCaml version
 ocaml -version
 echo OPAM versions
